@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="employee.AllEmployeeController">
+   <children>
+      <Label alignment="CENTER" layoutX="-2.0" layoutY="-1.0" prefHeight="45.0" prefWidth="605.0" style="-fx-background-color: #636e72; -fx-font-size: 35px;" text="All Of Employee" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="1.0" layoutY="50.0" prefHeight="352.0" prefWidth="593.0" style="-fx-background-color: #0984e3;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Button fx:id="show" layoutX="222.0" layoutY="1.0" mnemonicParsing="false" onAction="#showAllInformation" prefHeight="40.0" prefWidth="300.0" style="-fx-background-color: #636e72; -fx-background-radius: 12px;" text="Show All Employee Information" textFill="WHITE" AnchorPane.leftAnchor="120.0" AnchorPane.rightAnchor="120.0" AnchorPane.topAnchor="10.0">
+               <font>
+                  <Font name="System Italic" size="18.0" />
+               </font>
+            </Button>
+            <ListView fx:id="informationHere" layoutX="1.0" layoutY="41.0" prefHeight="280.0" prefWidth="591.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="60.0" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="home" layoutX="500.0" layoutY="9.0" mnemonicParsing="false" onAction="#goToHome" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: #d63031; -fx-background-radius: 10px;" text="Home" textFill="WHITE" AnchorPane.bottomAnchor="360.0" AnchorPane.leftAnchor="522.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="8.0" />
+   </children>
+</AnchorPane>

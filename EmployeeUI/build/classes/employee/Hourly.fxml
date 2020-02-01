@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #2d3436;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="employee.HourlyController">
+   <children>
+      <Label alignment="CENTER" layoutX="-1.0" prefHeight="41.0" prefWidth="600.0" style="-fx-background-color: #636e72; -fx-font-size: 30px;" text="Add Employee" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <VBox layoutY="53.0" prefHeight="349.0" prefWidth="160.0">
+         <children>
+            <Button fx:id="salaried" mnemonicParsing="false" onAction="#goToSalaried" prefHeight="44.0" prefWidth="160.0" style="-fx-background-color: #00b894; -fx-font-size: 22px;" text="Salaried" textFill="#00000066">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="commission" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#goToCommission" prefHeight="44.0" prefWidth="160.0" style="-fx-background-color: #00cec9; -fx-font-size: 22px;" text="Commission" textFill="#00000063">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets top="7.0" />
+               </VBox.margin>
+            </Button>
+            <Button layoutX="10.0" layoutY="58.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="160.0" style="-fx-background-color: #0984e3; -fx-font-size: 22px;" text="Hourly" textFill="#000000fc">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets top="7.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <AnchorPane layoutX="156.0" layoutY="45.0" prefHeight="358.0" prefWidth="443.0" style="-fx-background-color: #0984e3;">
+         <children>
+            <Label alignment="CENTER_RIGHT" layoutY="25.0" prefHeight="36.0" prefWidth="160.0" text="Name:">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutY="65.0" prefHeight="36.0" prefWidth="160.0" text="ID:">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutY="106.0" prefHeight="36.0" prefWidth="160.0" text="Designation:">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutY="145.0" prefHeight="36.0" prefWidth="160.0" text="Hourly Worked:">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutY="188.0" prefHeight="36.0" prefWidth="160.0" text="Hourly Rate:">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <TextField fx:id="hourlyName" layoutX="165.0" layoutY="28.0" prefHeight="30.0" prefWidth="270.0" style="-fx-background-radius: 15px;" />
+            <TextField fx:id="hourlyId" layoutX="165.0" layoutY="68.0" prefHeight="30.0" prefWidth="270.0" style="-fx-background-radius: 15px;" />
+            <TextField fx:id="hourlyDesignation" layoutX="165.0" layoutY="109.0" prefHeight="30.0" prefWidth="270.0" style="-fx-background-radius: 15px;" />
+            <TextField fx:id="hourlyWorked" layoutX="165.0" layoutY="148.0" prefHeight="30.0" prefWidth="270.0" style="-fx-background-radius: 15px;" />
+            <TextField fx:id="hourlyRate" layoutX="165.0" layoutY="188.0" prefHeight="30.0" prefWidth="270.0" style="-fx-background-radius: 15px;" />
+            <Button fx:id="submit" layoutX="160.0" layoutY="268.0" mnemonicParsing="false" onAction="#getHourlyInput" prefHeight="45.0" prefWidth="166.0" style="-fx-background-radius: 15px;" text="Submit" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="5.0">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Button fx:id="home" layoutX="522.0" layoutY="9.0" mnemonicParsing="false" onAction="#goToHome" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: #d63031; -fx-background-radius: 10px;" text="Home" textFill="WHITE" AnchorPane.bottomAnchor="362.0" AnchorPane.leftAnchor="522.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="8.0" />
+   </children>
+</AnchorPane>
